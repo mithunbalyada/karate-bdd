@@ -1,0 +1,1090 @@
+<!doctype html>
+<!--
+    Copyright 2018 trivago N.V.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+<html lang="en">
+ <head>
+  <base href="../..">  
+  <meta charset="utf-8"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="Cluecumber Report Plugin version 1.7.2 - Scenario Details"> 
+  <meta name="author" content="Cluecumber Report Plugin version 1.7.2"> 
+  <title>Scenario Details - 2019/03/20 02:09:14</title> 
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
+  <link rel="stylesheet" href="css/cluecumber.css" type="text/css"> 
+  <link rel="stylesheet" href="css/cluecumber_custom.css"> 
+  <link rel="stylesheet" href="css/datatables.min.css"> 
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css"> 
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/datatables.min.js"></script> 
+  <script src="js/jquery.fancybox.min.js"></script> 
+  <script src="js/Chart.bundle.min.js"></script> 
+  <script>
+    $(document).ready(function () {
+        // Data tables
+        $('.renderAsDataTable').on('draw.dt', function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        }).DataTable({
+            "oLanguage": {
+                "sSearch": "Search:"
+            },
+            "pageLength": 25
+        });
+
+        $('.collapse').on('shown.bs.collapse', function (e) {
+            $(e.target).find("iframe").each(function (index, iframe) {
+                resizeIframe(iframe);
+            })
+        });
+
+        // Lightbox
+        $("a.grouped_elements").fancybox();
+
+        // Tool tips
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Chart
+        var canvas = document.getElementById('chart-area');
+        var ctx = canvas.getContext("2d");
+        var chart = new Chart(ctx, eval({
+  "data": {
+    "labels": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4",
+      "Step 5",
+      "Step 6",
+      "Step 7",
+      "Step 8",
+      "Step 9",
+      "Step 10",
+      "Step 11",
+      "Step 12",
+      "Step 13",
+      "Step 14",
+      "Step 15",
+      "Step 16",
+      "Step 17",
+      "Step 18",
+      "Step 19",
+      "Step 20",
+      "Step 21",
+      "Step 22",
+      "Step 23",
+      "Step 24",
+      "Step 25",
+      "Step 26",
+      "Step 27",
+      "Step 28",
+      "Step 29",
+      "Step 30",
+      "Step 31",
+      "Step 32",
+      "Step 33"
+    ],
+    "datasets": [
+      {
+        "data": [
+          3,
+          7,
+          5,
+          47,
+          778,
+          0,
+          3,
+          14,
+          7,
+          6,
+          9,
+          1,
+          5,
+          539,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          394,
+          0,
+          0,
+          0,
+          2,
+          2,
+          393,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)"
+        ],
+        "label": "passed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)"
+        ],
+        "label": "failed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)"
+        ],
+        "label": "skipped",
+        "stack": "complete"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "xAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step(s)"
+          },
+          "stepSize": 0.0
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step Runtime"
+          },
+          "stepSize": 0.0
+        }
+      ]
+    }
+  },
+  "type": "bar"
+}));
+
+        var original;
+        switch (chart.config.type) {
+            case "pie":
+                original = Chart.defaults.pie.legend.onClick;
+                break;
+            default:
+                original = Chart.defaults.global.legend.onClick;
+                break;
+        }
+
+        chart.options.legend.onClick = function (evt, label) {
+            original.call(this, evt, label);
+
+            var card = $("#card_" + label.text);
+            label.hidden ? card.show() : card.hide();
+
+            var row = $(".row_" + label.text);
+            label.hidden ? row.show() : row.hide();
+        };
+
+        if (false) {
+            $(".btn-outline-secondary[data-cluecumber-item='before-after-hooks-button']").click();
+        }
+        if (false) {
+            $(".btn-outline-secondary[data-cluecumber-item='step-hooks-button']").click();
+        }
+        if (false) {
+            $(".btn-outline-secondary[data-cluecumber-item='doc-strings-button']").click();
+        }
+    });
+
+    function resizeIframe(iframe) {
+        iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 25) + 'px';
+    }
+</script> 
+ </head> 
+ <body> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+   <span class="navbar-brand">Scenario Details</span> 
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+   <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+    <ul class="navbar-nav mr-auto"> 
+     <li class="nav-item"> <a class="nav-link" href="pages/feature-summary.html">All Features</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/scenario-sequence.html">Scenario Sequence</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
+    </ul> 
+    <span class="text-light">2019/03/20 02:09:14</span> 
+   </div> 
+  </nav> 
+  <main role="main" class="container"> 
+   <div class="cluecumber-template"> 
+    <div class="pb-2 mt-4 mb-2 border-bottom"> 
+     <h5><a href="pages/feature-scenarios/feature_0.html">features/employee.feature</a></h5> 
+     <h3>Save the details of new employee and validate the output, query employee details using id and then updated the details, finally deleted the employee details</h3> 
+    </div> 
+    <div class="row"> 
+     <div class="col-sm-8  h-auto" data-cluecumber-item="card"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Result Chart
+       </div> 
+       <div class="card-body"> 
+        <div id="canvas-holder" class="w-100 text-center" data-cluecumber-item="chart"> 
+         <canvas id="chart-area" class="w-100"></canvas> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="col-sm-4  h-auto" data-cluecumber-item="card"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Information
+       </div> 
+       <div class="card-body"> 
+        <ul class="list-group list-group-flush"> 
+         <li class="list-group-item">33 Step(s)</li> 
+         <li class="list-group-item"> 33 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 0 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"><span style="display:none">failed</span></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"><span style="display:none">skipped</span></i> </li> 
+         <li class="list-group-item">Duration: 0m 02s 231ms</li> 
+         <li class="list-group-item"> </li> 
+        </ul> 
+        <button class="btn btn-outline-secondary btn-block collapsed" type="button" data-toggle="collapse" aria-expanded="true" data-cluecumber-item="doc-strings-button" data-target=".scenarioDocstring">DocStrings </button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <ul class="list-group list-group-flush"> 
+     <div class="col-sm-12  h-auto" data-cluecumber-item="card"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Steps
+       </div> 
+       <div class="card-body"> 
+        <li class="list-group-item"> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           1.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * url 'http://dummy.restapiexample.com' </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 003ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:10.826 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+02:09:10.826 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           2.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Given path '/api/v1/create' </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 007ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           3.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And header Accept = 'application/json' </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 005ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           4.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And request {name:"my-api-test-emp",salary:"1234534",age:"30"} </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 047ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           5.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> When method post </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 778ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:11.208 request:
+1 &gt; GET <a href="http://dummy.restapiexample.com/api/v1/employees" target="_blank">http://dummy.restapiexample.com/api/v1/employees</a>
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_91)
+
+02:09:11.209 request:
+1 &gt; POST <a href="http://dummy.restapiexample.com/api/v1/create" target="_blank">http://dummy.restapiexample.com/api/v1/create</a>
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 56
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_91)
+{"name":"my-api-test-emp","salary":"1234534","age":"30"}
+
+02:09:11.686 response time in milliseconds: 474.50
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Wed, 20 Mar 2019 02:09:11 GMT
+1 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: 
+1 &lt; Server: nginx/1.14.1
+1 &lt; Set-Cookie: PHPSESSID=4n8veb3vf6qj5l7u59htdf3ef1; path=/
+1 &lt; Vary: Accept-Encoding
+{"name":"my-api-test-emp","salary":"1234534","age":"30","id":"71989"}</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           6.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Then status 200 </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           7.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match response == {id: '#regex[0-9]+', name: '#string', salary: '#regex[0-9.]+', age: '#regex[0-9]+' } </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 003ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           8.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * def id = response.id </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 014ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           9.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * def employee_name = response.name </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 007ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           10.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * def employee_salary = response.salary </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 006ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           11.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * def employee_age = response.age </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 009ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           12.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * print id </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 001ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:11.731 [print] 71989</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           13.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Given path '/api/v1/employee/', id </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 005ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           14.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> When method get </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 539ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:11.746 request:
+2 &gt; GET <a href="http://dummy.restapiexample.com/api/v1/employee/71989" target="_blank">http://dummy.restapiexample.com/api/v1/employee/71989</a>
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: PHPSESSID=4n8veb3vf6qj5l7u59htdf3ef1
+2 &gt; Host: dummy.restapiexample.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_91)
+
+02:09:12.277 response time in milliseconds: 529.74
+2 &lt; 200
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: text/html; charset=UTF-8
+2 &lt; Date: Wed, 20 Mar 2019 02:09:12 GMT
+2 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2 &lt; Pragma: no-cache
+2 &lt; Referrer-Policy: 
+2 &lt; Server: nginx/1.14.1
+2 &lt; Vary: Accept-Encoding
+2 &lt; X-Acc-Exp: 0
+2 &lt; X-Proxy-Cache: BYPASS dummy.restapiexample.com
+{"id":"71989","employee_name":"my-api-test-emp","employee_salary":"1234534","employee_age":"30","profile_image":""}</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           15.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Then status 200 </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           16.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * def employee = response </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           17.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * print employee </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:12.278 [print] {
+  "id": "71989",
+  "employee_name": "my-api-test-emp",
+  "employee_salary": "1234534",
+  "employee_age": "30",
+  "profile_image": ""
+}</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           18.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match employee.id == id </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           19.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match employee.employee_name == employee_name </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           20.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match employee.employee_salary == employee_salary </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           21.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match employee.employee_age == employee_age </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           22.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Given path '/api/v1/update/', id </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 004ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           23.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And header Accept = 'application/json' </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           24.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And request {name:employee_name ,salary:"678910.00",age:employee_age} </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           25.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> When method put </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 394ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:12.289 request:
+3 &gt; PUT <a href="http://dummy.restapiexample.com/api/v1/update/71989" target="_blank">http://dummy.restapiexample.com/api/v1/update/71989</a>
+3 &gt; Accept: application/json
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Content-Length: 66
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Cookie: PHPSESSID=4n8veb3vf6qj5l7u59htdf3ef1
+3 &gt; Host: dummy.restapiexample.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_91)
+{"name":"employee_name","salary":"678910.00","age":"employee_age"}
+
+02:09:12.680 response time in milliseconds: 390.62
+3 &lt; 200
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+3 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: text/html; charset=UTF-8
+3 &lt; Date: Wed, 20 Mar 2019 02:09:12 GMT
+3 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+3 &lt; Pragma: no-cache
+3 &lt; Referrer-Policy: 
+3 &lt; Server: nginx/1.14.1
+3 &lt; Vary: Accept-Encoding
+{"name":"employee_name","salary":"678910.00","age":"employee_age"}</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           26.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Then status 200 </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           27.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * def employeeUpdate = response </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           28.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> * print employeeUpdate </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:12.681 [print] {
+  "name": "employee_name",
+  "salary": "678910.00",
+  "age": "employee_age"
+}</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           29.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match employeeUpdate.salary == "678910.00" </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 002ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           30.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Given path '/api/v1/delete/', id </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 002ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           31.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> When method delete </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 393ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+          <div class="scenarioDocstring collapse"> 
+           <div class="row w-100 p-3 m-0"> 
+            <div class="w-100 text-left border"> 
+             <pre class="text-secondary small p-2">02:09:13.079 response time in milliseconds: 389.82
+4 &lt; 200
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+4 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+4 &lt; Connection: keep-alive
+4 &lt; Content-Type: text/html; charset=UTF-8
+4 &lt; Date: Wed, 20 Mar 2019 02:09:13 GMT
+4 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+4 &lt; Pragma: no-cache
+4 &lt; Referrer-Policy: 
+4 &lt; Server: nginx/1.14.1
+4 &lt; Vary: Accept-Encoding
+{"success":{"text":"successfully! deleted Records"}}</pre> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           32.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> Then status 200 </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           33.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="karate"> And match response contains {"success":{"text":"successfully! deleted Records"}} </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"><span style="display:none">passed</span></i> 
+          </div> 
+         </div> </li> 
+       </div> 
+      </div> 
+     </div> 
+    </ul> 
+   </div> 
+  </main> 
+  <footer class="footer navbar-dark bg-dark"> 
+   <div class="container-fluid"> 
+    <span>Cluecumber Report Plugin version 1.7.2 - 2019/03/20 02:09:14.</span> 
+   </div> 
+  </footer>   
+ </body>
+</html>
